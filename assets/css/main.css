@@ -1473,7 +1473,7 @@ section,
 .portfolio-details .portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 90%);
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
