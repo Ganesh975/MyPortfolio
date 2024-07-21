@@ -39,6 +39,21 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
+.icon-logo{
+  display: flex;
+  gap:0.5rem;
+  align-items: center;
+}
+.imgclass img{
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  object-fit: contain;
+  border: 3px solid bisque;
+
+  
+}
+
 .light-background {
   --background-color: #f9f9f9;
   --surface-color: #ffffff;
@@ -167,7 +182,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  /* max-height: 32px; */
   margin-right: 8px;
 }
 
@@ -186,6 +201,14 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+@media  (max-width:789px){
+  .imgclass img{
+    width: 50px;
+    height: 50px;
+
+  }
+  
+}
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -715,6 +738,14 @@ section,
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
+  };
+  @media (max-width:768px) {
+    .portfolio-info{
+      background: color-mix(in srgb, var(--background-color), transparent 10%);
+      color: red;
+
+    }
+    
   }
 
   .hero p {
